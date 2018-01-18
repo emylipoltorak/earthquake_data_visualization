@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Earthquakes in the Last 7 Days</title>
+    <style>
+
+    html, body, #map-container   {
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      font-family: sans-serif;
+
+    }
+
+    .arrow_box {
+      position: relative;
+      background: rgba(226, 223, 218, 0.81);
+      border: 2px solid rgba(31, 28, 34, 0.95);
+      padding: 2px;
+      border-radius: 2px;
+    }
+    .arrow_box:after, .arrow_box:before {
+      top: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    .arrow_box:after {
+      border-color: rgba(171, 160, 189, 0);
+      border-top-color: rgba(226, 223, 218, 0.81);
+      border-width: 5px;
+      margin-left: -5px;
+    }
+    .arrow_box:before {
+      border-color: rgba(73, 65, 82, 0);
+      border-top-color: rgba(31, 28, 34, 0.95);
+      border-width: 8px;
+      margin-left: -8px;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="map-container"></div>
+    <div class="arrow_box" id="popup-container">
+      <h1>Test</h1>
+    </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </body>
+</html>
